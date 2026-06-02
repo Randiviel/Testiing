@@ -33,7 +33,6 @@ const sredniaEfektywnosc = computed(() => {
 </script>
 
 <template>
-  <component :is="'script'" src="https://cdn.tailwindcss.com"></component>
 
   <div class="min-h-screen bg-gray-50 text-gray-800 font-sans antialiased">
     
