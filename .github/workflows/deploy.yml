@@ -6,6 +6,10 @@ on:
     - cron: '0 2 * * *'
   workflow_dispatch: # Pozwala też uruchomić proces ręcznie jednym kliknięciem w panelu GitHub
 
+# ⚠️ TO JEST KLUCZOWE: Daje akcji uprawnienia do zapisu na Twoim repozytorium (tworzenia stron)
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -16,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-level: '20'
+          node-version: '20' # <-- Poprawiono z node-level na node-version
 
       # KROK B: Budowanie Vue.js i deployment na GH Pages
       - name: Install and Build Vue App
