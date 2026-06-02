@@ -25,9 +25,8 @@ jobs:
       # KROK B: Budowanie Vue.js i deployment na GH Pages
       - name: Install and Build Vue App
         run: |
-          npm ci
+          npm install
           npm run build
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
