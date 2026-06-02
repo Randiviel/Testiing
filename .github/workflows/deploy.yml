@@ -1,0 +1,31 @@
+name: Daily Data Fetch and Deploy
+
+on:
+  schedule:
+    # Uruchamiaj codziennie o 02:00 UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Pozwala też uruchomić proces ręcznie jednym kliknięciem w panelu GitHub
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-level: '20'
+
+      # KROK B: Budowanie Vue.js i deployment na GH Pages
+      - name: Install and Build Vue App
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # Folder wyjściowy z Vite/Vue
+          branch: gh-pages # Gałąź, z której GH Pages czyta stronę
