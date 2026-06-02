@@ -1,0 +1,74 @@
+[
+  {
+    "data": "2026-06-01",
+    "miasto": "Warszawa",
+    "efektywnosc": 92.5,
+    "ptod": 14.2,
+    "forecast_error": 4.1,
+    "ilosc_zamowien": 1250
+  },
+  {
+    "data": "2026-06-01",
+    "miasto": "Kraków",
+    "efektywnosc": 88.1,
+    "ptod": 16.5,
+    "forecast_error": 5.8,
+    "ilosc_zamowien": 890
+  },
+  {
+    "data": "2026-06-01",
+    "miasto": "Gdańsk",
+    "efektywnosc": 94.0,
+    "ptod": 12.0,
+    "forecast_error": 3.2,
+    "ilosc_zamowien": 620
+  },
+  {
+    "data": "2026-06-02",
+    "miasto": "Warszawa",
+    "efektywnosc": 91.2,
+    "ptod": 15.0,
+    "forecast_error": 4.5,
+    "ilosc_zamowien": 1310
+  },
+  {
+    "data": "2026-06-02",
+    "miasto": "Kraków",
+    "efektywnosc": 89.5,
+    "ptod": 15.8,
+    "forecast_error": 5.1,
+    "ilosc_zamowien": 920
+  },
+  {
+    "data": "2026-06-02",
+    "miasto": "Gdańsk",
+    "efektywnosc": 95.1,
+    "ptod": 11.5,
+    "forecast_error": 2.9,
+    "ilosc_zamowien": 640
+  },
+  {
+    "data": "2026-06-03",
+    "miasto": "Warszawa",
+    "efektywnosc": 94.8,
+    "ptod": 13.1,
+    "forecast_error": 3.8,
+    "ilosc_zamowien": 1420
+  },
+  {
+    "data": "2026-06-03",
+    "miasto": "Kraków",
+    "efektywnosc": 87.4,
+    "ptod": 17.2,
+    "forecast_error": 6.2,
+    "ilosc_zamowien": 850
+  },
+  {
+    "data": "2026-06-03",
+    "miasto": "Gdańsk",
+    "efektywnosc": 93.7,
+    "ptod": 12.4,
+    "forecast_error": 3.5,
+    "ilosc_zamowien": 610
+  }
+]
